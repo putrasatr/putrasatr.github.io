@@ -1,0 +1,41 @@
+:root {
+  --primary-color: #262527;
+  --secondary-color: antiquewhite;
+  --grey-color: #1b1a1a;
+  --base-gap: 3rem;
+}
+@media screen and (max-width: 1023px) {
+  :root {
+    --base-gap: 1rem;
+  }
+}
+*,
+html {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: var(--grey-color);
+  transition: all 0.5s ease-out;
+}
+body {
+  background-color: var(--primary-color);
+  padding: var(--base-gap);
+}
+ul {
+  list-style: none;
+}
+li {
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: #262527;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  font-size: 30px;
+  transition: all ease-in-out 0.3s;
+}
+pre {
+  color: white;
+}
