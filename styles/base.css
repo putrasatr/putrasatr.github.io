@@ -2,7 +2,7 @@
   --primary-color: #262527;
   --secondary-color: antiquewhite;
   --grey-color: #1b1a1a;
-  --base-gap: 3rem;
+  --base-gap: 1rem;
 }
 @media screen and (max-width: 1023px) {
   :root {
@@ -13,11 +13,9 @@
 html {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: var(--grey-color);
-  transition: all 0.5s ease-out;
 }
 body {
   background-color: var(--primary-color);
-  padding: var(--base-gap);
 }
 ul {
   list-style: none;
@@ -27,15 +25,15 @@ li {
 }
 a {
   text-decoration: none;
-  color: #262527;
+  color: var(--secondary-color);
 }
-a:visited {
-  color: black;
-}
-a:hover {
-  font-size: 30px;
-  transition: all ease-in-out 0.3s;
-}
+
 pre {
   color: white;
+}
+
+body,
+html {
+  margin: 0px;
+  height: 100%;
 }
